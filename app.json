@@ -1,0 +1,17 @@
+{
+  "name": "cleanremotes",
+  "description": "https://github.com/88lex/cleanremotes",
+  "keywords": ["cron-is-pain"],
+  "repository": "https://github.com/ssnjrthegr8/cleanremotes-heroku.git",
+  "stack": "container",
+  "env": {
+    "COMMAND": {
+      "description": "The cleanremote command filters/flags. The stuff that you type after ./cleanremote",
+      "required":  "true"
+    },
+    "TIME": {
+      "description": "Hour and min of a day to execute the script. Format= hh:mm (24 hr time). Make sure its 30 min before and away from deploying this app",
+      "required":  "true"
+    }
+  }
+}
